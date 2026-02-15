@@ -1,161 +1,18 @@
-📊 Análise de Mercado — E-commerce Brasileiro (Olist)
-📌 Contexto do Projeto
+# Análise de Mercado — E-commerce Brasileiro (Olist)
 
-Este projeto analisa a estrutura competitiva do e-commerce brasileiro utilizando a base pública da Olist (2016–2018).
+Este projeto realiza uma análise exploratória do mercado brasileiro de e-commerce utilizando a base pública da Olist (2016–2018). O objetivo é avaliar a estrutura competitiva do marketplace por meio de métricas quantitativas, investigando concentração de mercado, geração de receita, dinâmica temporal e distribuição geográfica.
 
-O objetivo foi aplicar técnicas de análise de dados e métricas econômicas para gerar insights estratégicos sobre:
+A base de dados foi integrada a partir dos arquivos orders, order_items, products, customers e category_translation. A principal métrica construída foi a receita por pedido (price + freight), utilizada como unidade central de análise.
 
-Concentração de mercado
+O tratamento envolveu consolidação das bases via joins, conversão de variáveis temporais, padronização de categorias e modelagem da variável de receita. A análise incluiu estatística descritiva, cálculo de receita por categoria, evolução mensal da receita, ticket médio por pedido, participação de mercado por seller, participação acumulada dos 10 maiores vendedores e o Índice Herfindahl-Hirschman (HHI) para mensuração formal da concentração.
 
-Geração de receita
+Os resultados indicam que os 10 maiores sellers concentram aproximadamente 12,8% da receita total, e o HHI confirma baixa concentração estrutural, caracterizando um mercado pulverizado e competitivo. Observa-se crescimento consistente ao longo do período analisado, além de forte concentração geográfica da receita na região Sudeste, especialmente no estado de São Paulo. O ticket médio revela impacto relevante do frete na composição da receita total, sugerindo que estratégias logísticas influenciam diretamente a competitividade.
 
-Dinâmica temporal
+O projeto demonstra capacidade de integração e modelagem de dados, aplicação de métricas quantitativas e interpretação estratégica de indicadores de mercado, com base analítica fundamentada em Matemática.
 
-Distribuição geográfica
+Tecnologias utilizadas: Python, Pandas, Matplotlib e métricas econômicas de concentração de mercado.
 
-Performance por categoria
-
-🎯 Problema de Negócio
-
-Como está estruturado o mercado de sellers dentro do marketplace?
-
-O mercado é concentrado?
-
-Existem players dominantes?
-
-Quais categorias geram maior receita?
-
-O mercado está crescendo ao longo do tempo?
-
-🗂 Base de Dados
-
-Fonte: Brazilian E-Commerce Public Dataset (Kaggle)
-Período: 2016–2018
-
-Bases utilizadas:
-
-orders
-
-order_items
-
-products
-
-customers
-
-category_translation
-
-Métrica principal construída:
-Receita por pedido = price + freight
-
-🔎 Etapas da Análise
-1️⃣ Tratamento e Modelagem
-
-Integração das bases via joins
-
-Conversão de datas
-
-Criação da variável de receita
-
-Tradução e padronização de categorias
-
-2️⃣ Análises Realizadas
-
-Receita total por categoria
-
-Receita mensal (série temporal)
-
-Ticket médio
-
-Participação de mercado por seller
-
-Top 10 Market Share
-
-Índice Herfindahl-Hirschman (HHI)
-
-A análise foi conduzida com base em estatística descritiva e métricas formais de concentração de mercado, aplicando fundamentos matemáticos na modelagem e interpretação dos resultados.
-
-📊 Principais Resultados
-🏪 Estrutura de Mercado
-
-Top 10 sellers concentram aproximadamente 12,8% da receita total.
-
-HHI indica baixa concentração.
-
-Mercado altamente fragmentado.
-
-📌 Conclusão:
-O marketplace apresenta ambiente competitivo, sem dominância estrutural de grandes players.
-
-📦 Categorias
-
-Categorias líderes concentram maior volume financeiro.
-
-Indícios de maturidade em segmentos específicos.
-
-📌 Insight:
-Há espaço para estratégias de especialização em nichos menos saturados.
-
-📈 Evolução Temporal
-
-Crescimento estrutural ao longo do período analisado.
-
-📌 Insight:
-O mercado digital brasileiro apresentou expansão consistente entre 2016–2018.
-
-🌎 Distribuição Geográfica
-
-Receita concentrada principalmente na região Sudeste.
-
-Estado de São Paulo com maior representatividade.
-
-📌 Insight:
-Possível oportunidade de expansão regional.
-
-💳 Ticket Médio
-
-Ticket intermediário.
-
-Frete impacta significativamente a receita total.
-
-📌 Insight:
-Estratégias logísticas influenciam diretamente competitividade e margem.
-
-🧠 Conclusão Geral
-
-O mercado analisado apresenta:
-
-Estrutura pulverizada
-
-Baixa concentração entre sellers
-
-Crescimento consistente
-
-Forte concentração regional
-
-Do ponto de vista analítico, o projeto demonstra:
-
-Capacidade de integração e modelagem de dados
-
-Aplicação de métricas quantitativas
-
-Interpretação estratégica de indicadores
-
-Uso de fundamentos matemáticos na análise de mercado
-
-🛠 Tecnologias Utilizadas
-
-Python
-
-Pandas
-
-Matplotlib
-
-Estatística Descritiva
-
-Métricas de Concentração (HHI, Market Share)
-
-👤 Autor
-
-Lucas Rezende
-Analista de Dados e Performance
+Autor:  
+Lucas Rezende  
+Analista de Dados e Performance  
 Bacharelado em Matemática (em andamento)
